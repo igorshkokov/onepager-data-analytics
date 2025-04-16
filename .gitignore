@@ -1,0 +1,31 @@
+# LaTeX intermediate files
+*.aux
+*.bbl
+*.blg
+*.brf
+*.fls
+*.fdb_latexmk
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.synctex.gz
+*.nav
+*.snm
+*.vrb
+*.xdv
+
+# minted / pygments cache
+_minted*
+
+# Editor-specific
+*.swp
+*.bak
+*~
+
+# Output PDFs (optional)
+*.pdf
+
+# latexmk generated directory
+latex.out/
