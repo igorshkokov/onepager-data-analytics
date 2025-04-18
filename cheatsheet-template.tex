@@ -1,3 +1,4 @@
+
 \usepackage[default]{raleway}
 \usepackage{fontawesome}
 \usepackage[T1]{fontenc}
@@ -43,6 +44,7 @@ backend=biber]
 \tcbset{tcbox width=auto,left=1mm,top=1mm,bottom=1mm,
 right=1mm,boxsep=1mm,middle=1pt}
 
+
 \newenvironment{mycolorbox}[2]{%
 \begin{tcolorbox}[grow to left by=-1em,grow to right by=-1em,capture=minipage,fonttitle=\large\bfseries, enhanced jigsaw,boxsep=1mm,colback=#1!30!white,on line,tcbox width=auto, toptitle=0mm,colframe=#1,opacityback=0.7,nobeforeafter,title=#2]%
 }{\end{tcolorbox}\\[0.2em]}
@@ -55,6 +57,14 @@ right=1mm,boxsep=1mm,middle=1pt}
 \begin{tcbraster}[raster columns=#1,raster equal height,nobeforeafter,raster column skip=1em,raster left skip=1em,raster right skip=1em]}{\end{tcbraster}}
 
 \newenvironment{textbox}[1]{\begin{mycolorbox}{customcolor}{#1}}{\end{mycolorbox}}
+
+% Define more colored boxes like textbox, but with different colors
+\newenvironment{textboxGreen}[1]{\begin{mycolorbox}{w3schools}{#1}}{\end{mycolorbox}}
+\newenvironment{textboxRed}[1]{\begin{mycolorbox}{alert}{#1}}{\end{mycolorbox}}
+\newenvironment{textboxPurple}[1]{\begin{mycolorbox}{customcolor}{#1}}{\end{mycolorbox}}
+\newenvironment{textboxGray}[1]{\begin{mycolorbox}{subbox}{#1}}{\end{mycolorbox}}
+\newenvironment{textboxYellow}[1]{\begin{mycolorbox}{codecolor}{#1}}{\end{mycolorbox}}
+
 
 %-------------------------------
 \newtcblisting{codebox}[2]{colback=codecolor!5,colframe=codecolor!80!black,listing only, 

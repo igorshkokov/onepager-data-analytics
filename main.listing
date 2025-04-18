@@ -1,4 +1,15 @@
-for (auto element : vector)
-{
-    sum += element;
-}
+{Blogs:}
+\begin{itemize}
+    \item Towards Data Science
+    \item Kdnuggets
+    \item Our World in Data
+    \item Voronoi
+    \item Reddit: \texttt{r/dataanalysis}
+\end{itemize}
+\textbf{Newsletters:} TLDR, FlowingData, blef.fr, HolonIQ
+
+\textbf{Books:}
+\begin{itemize}
+    \item Designing Your Life (Part 7)
+    \item Wishcraft (Part 4)
+\end{itemize}
