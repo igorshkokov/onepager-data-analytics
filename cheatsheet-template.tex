@@ -16,6 +16,7 @@
 \definecolor{w3schools}{HTML}{4CAF50}
 \definecolor{subbox}{gray}{0.60}
 \definecolor{codecolor}{HTML}{FFC300}
+\definecolor{whitebox}{rgb}{1,1,1} % RGB white
 \colorlet{xx}{customcolor}
 
 
@@ -64,8 +65,18 @@ right=1mm,boxsep=1mm,middle=1pt}
 \newenvironment{textboxPurple}[1]{\begin{mycolorbox}{customcolor}{#1}}{\end{mycolorbox}}
 \newenvironment{textboxGray}[1]{\begin{mycolorbox}{subbox}{#1}}{\end{mycolorbox}}
 \newenvironment{textboxYellow}[1]{\begin{mycolorbox}{codecolor}{#1}}{\end{mycolorbox}}
-
-
+\tcbset{
+  whitebox/.style={
+    colback=white,       % background color
+    colframe=white,      % border color
+    coltitle=black,      % title text color (if any)
+    boxrule=0pt,         % no border line thickness
+    left=0pt, right=0pt, top=0pt, bottom=0pt, % no padding (optional)
+    enhanced,
+    sharp corners         % no rounded corners
+  }
+}
+\newenvironment{textboxWhite}[1]{\begin{mycolorbox}{whitebox}{#1}}{\end{mycolorbox}}
 %-------------------------------
 \newtcblisting{codebox}[2]{colback=codecolor!5,colframe=codecolor!80!black,listing only, 
 minted options={numbers=left,style=friendly,fontsize=\tiny,breaklines,autogobble,linenos,numbersep=3mm},
